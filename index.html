@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STK TV Program</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="http://127.0.0.1:5500/index.html">STK TV PROGRAM</a>
+        <div class="search-container">
+            <form role="search" id="searchBar">
+                <input type="search" name="q" id="query" placeholder="Sök Program..">
+            </form>
+        </div>
+    </div>
+    <div class="program-container">
+        <form id="programForm">
+            <input type="text" id="titel" placeholder="Titel.." required title="Fyll i titel">
+
+            <input type="text" id="genre" placeholder="Genre.." required title="Fyll i genre">
+
+            <input type="text" id="åldersGräns" placeholder="Åldersgräns.." required title="Fyll i åldersgräns">
+
+            <button type="button" id="läggTill">Lägg till program</button>
+
+            <button type="button" id="taBort">Ta bort program</button>
+        </form>
+        <div class="bakgrundLista">
+            <ul id="programLista"></ul>
+        </div>
+
+    </div>
+    
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>
