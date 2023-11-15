@@ -13,9 +13,9 @@ h3 {
 .topnav a {
     float: left;
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* tar bort så att det inte blir understrykt på länken uppe till vänster */
     font-size: 25px;
-    cursor: pointer;
+    cursor: pointer; /* gör så att det blir en "pekare" när man drar över länken */
 }
 .search-container {
     float: right;
@@ -24,28 +24,32 @@ h3 {
     background-color: #151f30;
     width: 300px;
     height: 45px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+    border-radius: 10px; /* rundar av kanterna så att det ser snyggare ut */
+    display: flex; /* gör så att man kan centrera */
+    align-items: center; /* centrerar det innehåll som finns i "searchBar"*/
 }
 #query {
-    all: unset;
+    all: unset; /* återställer alla standardstilar för input*/
     font: 15px system ui;
     color: white;
     height: 100%;
     width: 100%;
-    padding: 5px 10px;
+    padding: 5px 10px; /* anger vilket mellanrum som ska va inuti "searchBar" */
 }
 .program-container {
-    flex-direction: column;
+    flex-direction: column; /* staplar upp de olika elementen inuti containern */
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* gör så att elementen blir centrerade vertikalt inuti containern*/
     height: 100vh;
 }
 #programForm {
     text-align: center;
     max-width: 350px;
-    margin: 0 auto;
+    background-color: #151f30;
+    border-radius: 10px;
+    margin: 20px auto; /* skapar mellanrum mellan allt runtom */
+    padding: 20px; 
+    box-shadow: 0 #151f30; /* gör så att det blir färg runtom hela formuläret som ett kort*/
 }
 #titel, #genre, #åldersGräns {
     width: 100%;
@@ -69,7 +73,7 @@ h3 {
     color: white;
     text-align: left;
     padding: 50px;
-    list-style: none;
+    list-style: none; /* gör så att punkterna försvinner i listan */
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -84,6 +88,6 @@ li {
 .bakgrundLista{
     background-color: #151f30;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
 }
